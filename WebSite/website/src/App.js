@@ -5,26 +5,46 @@ function App() {
   return (
     <div className="App">
       <div className="pimg1">
-        <div className="ptext">
-          <span className="border">
-            Parallax Website
-          </span>
-        </div>
+          <div className="ptext">
+            <span className="border">
+            Construction at its best
+            </span>
+          </div>
       </div>
       <section className="section section-light">
-        <h2>Section One</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
-    </p>
+        <h2 className="my-header">OUR MISSION</h2>
       </section>
       <div className="pimg2">
         <div className="ptext">
           <span className="border trans">
-            Image Two Text
+          "To deliver services & products safely in excellent standards for the benefit of stakeholders and the community"
       </span>
         </div>
       </div>
+      <section className="section section-light2">
+        <h2 className="my-header">Our vision</h2>
+      </section>
+      <div className="pimg3">
+        <div className="ptext">
+          <span className="border trans">
+          "Strive to deliver quality services in efficient & effective procedures. Shaping excellent people. Innovating & developing resources for the future "
+      </span>
+        </div>
+        
+      </div>
+      <section className="section section-light">
+        <h2 className="my-header">OUR MOTTO</h2>
+      </section>
+      <div className="pimg4">
+      <div className="ptext">
+            <span className="border-rev">
+            YOUR SATISFACTION IS OUR PRIORITY
+            </span>
+          </div>
+      </div>      
     </div>
+
+    
   );
 }
 
