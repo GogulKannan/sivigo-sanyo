@@ -1,1 +1,9 @@
 npm init react-app website
+
+
+npm install --save react-router-dom
+
+npm install [ to unpack]
+
+
+npm start
