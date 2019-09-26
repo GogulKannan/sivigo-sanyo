@@ -32,8 +32,12 @@ class Toolbar extends Component {
         const { prevScrollpos } = this.state;
     
         const currentScrollPos = window.pageYOffset;
-        const visible = prevScrollpos > currentScrollPos;
+        let visible = prevScrollpos > currentScrollPos;
     
+        if(currentScrollPos < 50){
+            visible = true;
+        }
+
         this.setState({
           prevScrollpos: currentScrollPos,
           visible
