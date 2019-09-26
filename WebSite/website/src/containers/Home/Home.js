@@ -12,7 +12,7 @@ function Home() {
             </span>
           </div>
       </div>
-      <section className="section section-light">
+      <section className="section section-light2">
         <h2 className="my-header">OUR MISSION</h2>
       </section>
       <div className="pimg2">
@@ -24,7 +24,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <section className="section section-light2">
+      <section className="section section-light">
         <h2 className="my-header">Our vision</h2>
       </section>
       <div className="pimg3">
@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <section className="section section-light">
+      <section className="section section-light2">
         <h2 className="my-header">OUR MOTTO</h2>
       </section>
       <div className="pimg4">

@@ -31,12 +31,12 @@
 
 .pimg2{
   background-image:url('../../assets/Images/2.jpg');
-  min-height:70%;
+  min-height:100%;
 }
 
 .pimg3{
   background-image:url('../../assets/Images/3.jpg');
-  min-height:70%;
+  min-height:100%;
 }
 .pimg4{
   background-image:url('../../assets/Images/4.jpg');
@@ -44,7 +44,7 @@
 }
 .section{
   text-align:center;
-  padding:50px 80px;
+/*  padding:50px 80px;*/
 }
 
 .section-light{
