@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
+
 .App {
   height:100vh;
   margin:0;
@@ -152,23 +153,117 @@
 
 @media(max-width:768px){
   .pimg1, .pimg2, .pimg3{
-    /* background-attachment:scroll; */
+     background-attachment:scroll; 
   }  
   .ptext2{
     margin-top: 40px;
   }
   .ptext{
-    font-size: 3vw;
+    font-size: 2.9vw;
     letter-spacing: 2.6px
   }
   .my-header{
     font-size: 6vw;
     text-transform: uppercase;
-    width: 100%;
+    width: 90%;
     margin-left: 0%;
     height: 0vh;
     line-height: 0vh;
     font-weight: 900;
     letter-spacing: 1px;    
   }
+  .pimg2 .quote-container{
+    font-family: 'Satisfy', 'Dancing Script', serif;
+    font-size: 7vw;
+    color: #303633;
+    font-weight: 600;
+    line-height: 65px;
+    width: 80%;
+    border-radius: 25px;
+    /* text-indent: 105px; */
+    margin-left: 10%;
+    background-color: white;
+    height: 250px;
+    margin-top: -125px;
+    position: relative;
+    text-transform: none !important;    
+  }
+  .pimg3 .quote-container{
+    font-family: 'Satisfy', 'Dancing Script', serif;
+    font-size: 6.5vw;
+    color: #303633;
+    font-weight: 600;
+    line-height: 65px;
+    width: 80%;
+    border-radius: 25px;
+    /* text-indent: 105px; */
+    margin-left: 10%;
+    background-color: white;
+    height: 320px;
+    margin-top: -160px;
+    position: relative;
+    text-transform: none !important;    
+  }  
+  .quote-container:before {
+      content: '\201C';
+      font-family: serif;
+      font-style: normal;
+      font-weight: 900;
+      position: absolute;
+      font-size: 120px;
+      top: -30px;
+      left: -40px;
+      padding-left: 25px;
+      color: white;
+  }  
+}
+
+@media(max-width:350px){
+  .pimg2 .quote-container{
+    font-family: 'Satisfy', 'Dancing Script', serif;
+    font-size: 7vw;
+    color: #303633;
+    font-weight: 600;
+    line-height: 65px;
+    width: 90%;
+    border-radius: 25px;
+    /* text-indent: 105px; */
+    margin-left: 5%;
+    background-color: white;
+    height: 250px;
+    margin-top: -125px;
+    position: relative;
+    text-transform: none !important;    
+  }
+  .pimg3 .quote-container{
+    font-family: 'Satisfy', 'Dancing Script', serif;
+    font-size: 6.5vw;
+    color: #303633;
+    font-weight: 600;
+    line-height: 65px;
+    width: 90%;
+    border-radius: 25px;
+    /* text-indent: 105px; */
+    margin-left: 5%;
+    background-color: white;
+    height: 320px;
+    margin-top: -160px;
+    position: relative;
+    text-transform: none !important;    
+  }  
+  .quote-container:before {
+      content: '\201C';
+      font-family: serif;
+      font-style: normal;
+      font-weight: 900;
+      position: absolute;
+      font-size: 120px;
+      top: -30px;
+      left: -40px;
+      padding-left: 25px;
+      color: white;
+  }   
+  .Logo {
+    margin-right: 5px;
+  }  
 }

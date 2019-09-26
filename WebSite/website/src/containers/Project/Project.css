@@ -1,4 +1,4 @@
-.AboutBase {
+/*.AboutBase {
     height:100vh;
     margin:0;
     font-size:16px;
@@ -14,11 +14,6 @@
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-  
-    /*
-      fixed = parallax
-      scroll = normal
-    */
     background-attachment:fixed;
   }
 
@@ -64,4 +59,4 @@
     border: 2px solid black;
     font-weight: bold;
   }
-  
+  */
