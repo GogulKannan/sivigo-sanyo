@@ -3,7 +3,12 @@ npm init react-app website
 
 npm install --save react-router-dom
 
+npm install react-bootstrap
+ref: https://react-bootstrap.github.io/layout/grid/
+
 npm install [ to unpack]
 
 
 npm start
+
+
