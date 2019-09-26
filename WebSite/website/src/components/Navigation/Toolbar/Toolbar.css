@@ -13,6 +13,11 @@
     z-index: 90;
     background-image: -webkit-linear-gradient(30deg, #e7e7e7 50%, rgba(0, 0, 0, 0) 0%);
     BACKGROUND-COLOR: WHITE;
+    transition: top 0.4s;
+}
+
+.Toolbar-hidden {
+    top: -56px !important;
 }
 
 .Toolbar nav {
