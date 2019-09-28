@@ -1,64 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './About.css';
 import aboutBg1 from '../../assets/Images/about/1.png';
+import BasicDesign from '../../components/UI/BasicDesign/BasicDesign';
+import aboutBg2 from '../../assets/Images/about/2.png';
 import aboutBg3 from '../../assets/Images/about/3.png';
-
-import Aux from '../../hoc/_Aux/_Aux';
-import Modal from '../../components/UI/Modal/Modal';
-import LearnMore from '../../components/LearnMore/LearnMore';
-
-function About(props) {
-
-  let learnMore = null;
-  learnMore = <LearnMore
-                heading="heading 1" />;
+import aboutBg6 from '../../assets/Images/about/6.png';
 
 
 
 
-  return (
 
-    <div className="AboutMain" >
-      <div className="pimg" style={{backgroundImage: "url(" + aboutBg1 + ")"}}>
-        <div className="about-heading">
-          <span className="border">
-          CONSTRUCTION PROFESSIONALS
+class About extends Component {
+
+  
+
+  render() {
+    return (
+      <div className="AboutMain" >
+        <div className="pimg" style={{ backgroundImage: "url(" + aboutBg1 + ")" }}>
+          <div className="about-heading">
+            <span className="border">
+              CONSTRUCTION PROFESSIONALS
             </span>
+          </div>
         </div>
-      </div>
-      <section className="section section-light2">
-        <h2 className="my-header-main">WHAT WE DO</h2>
-        <div className="ptext-aboutMessage">
+        <section className="section section-light2">
+          <h2 className="my-header-main">WHAT WE DO</h2>
+          <div className="ptext-aboutMessage">
             Sanyo Engineering Pte Ltd was establish in Feb 2014, as a young,
             dynamic contractor specializing in the Integrated Civil Engineering,
             Project Management and M&E Works. We have been constantly striving hard
             to greater heights through hard work, innovation, value engineering and
             sustainable progressive growth providing responsive and quality services to our clients.
-        </div>   
-        <h2 className="my-header-sub">PLANT CIVIL WORK</h2>                     
-      </section>
+        </div>
+          <h2 className="my-header-sub">PLANT CIVIL WORK</h2>
+        </section>
 
-      <div className="pimg" style={{backgroundImage: "url(" + aboutBg3 + ")"}}>
-        <div className="cardMain">
-        {/* <Aux>
-                <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
-                    {learnMore}
-                </Modal>
+        <BasicDesign bg={aboutBg2} side={0} header="" />
+        <BasicDesign bg={aboutBg3} side={1} header="SCAFFOLDING WORKS" />
+        <BasicDesign bg={aboutBg1} side={2} header="INSULATION WORKS" />
+        <BasicDesign bg={aboutBg1} side={1} header="MANPOWER PROVISION" />
+        <BasicDesign bg={aboutBg1} side={2} header="BLASTING / PAINTING WORKS" />
+        <BasicDesign bg={aboutBg6} side={1} header="MAINTENANCE PROCESS PLANT" />
 
-            </Aux> */}
-
-          <button 
-            className="LearnMore"
-            onClick={props.heading}>Learn More .. </button>
-          </div>
-      
-        
-      </div>
-       
-
-
-
-        {/* <div className="AboutBase">
+  
+ {/* <div className="AboutBase">
           <h2><u>Civil Engineering Construction Works/PLANT CIVIL WORKS</u></h2>
           <li>Construction of Roads</li>
           <li>Widening, Extension, Re-marking and Maintenance of Roads</li>
@@ -132,15 +118,9 @@ timely, efficient and make sure you’re satisfied every step of the way.</p>
 
         </div> */}
 
-    </div>
-
-
-
-
-
-
-
-  );
+      </div>
+    );
+  }
 }
 
 export default About;
