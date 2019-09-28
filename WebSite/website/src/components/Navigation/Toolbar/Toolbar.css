@@ -11,7 +11,7 @@
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 90;
-    background-image: -webkit-linear-gradient(30deg, #e7e7e7 50%, rgba(0, 0, 0, 0) 0%);
+    background-image: -webkit-linear-gradient(20deg, #e7e7e7 50%, rgba(0, 0, 0, 0) 0%);
     BACKGROUND-COLOR: WHITE;
     transition: top 0.4s;
 }

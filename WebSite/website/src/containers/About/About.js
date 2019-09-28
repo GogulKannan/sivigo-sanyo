@@ -1,35 +1,64 @@
 import React from 'react';
 import './About.css';
+import aboutBg1 from '../../assets/Images/about/1.png';
+import aboutBg3 from '../../assets/Images/about/3.png';
 
-function About() {
+import Aux from '../../hoc/_Aux/_Aux';
+import Modal from '../../components/UI/Modal/Modal';
+import LearnMore from '../../components/LearnMore/LearnMore';
+
+function About(props) {
+
+  let learnMore = null;
+  learnMore = <LearnMore
+                heading="heading 1" />;
+
+
+
+
   return (
 
     <div className="AboutMain" >
-      <div className="pimg99">
+      <div className="pimg" style={{backgroundImage: "url(" + aboutBg1 + ")"}}>
         <div className="about-heading">
           <span className="border">
-            WHAT WE DO
+          CONSTRUCTION PROFESSIONALS
             </span>
         </div>
-       
-          <div className="ptext-aboutMessage">
+      </div>
+      <section className="section section-light2">
+        <h2 className="my-header-main">WHAT WE DO</h2>
+        <div className="ptext-aboutMessage">
             Sanyo Engineering Pte Ltd was establish in Feb 2014, as a young,
-    dynamic contractor specializing in the Integrated Civil Engineering,
-    Project Management and M&E Works. We have been constantly striving hard
-    to greater heights through hard work, innovation, value engineering and
-    sustainable progressive growth providing responsive and quality services to our clients.
-        </div>
+            dynamic contractor specializing in the Integrated Civil Engineering,
+            Project Management and M&E Works. We have been constantly striving hard
+            to greater heights through hard work, innovation, value engineering and
+            sustainable progressive growth providing responsive and quality services to our clients.
+        </div>   
+        <h2 className="my-header-sub">PLANT CIVIL WORK</h2>                     
+      </section>
+
+      <div className="pimg" style={{backgroundImage: "url(" + aboutBg3 + ")"}}>
+        <div className="cardMain">
+        {/* <Aux>
+                <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
+                    {learnMore}
+                </Modal>
+
+            </Aux> */}
+
+          <button 
+            className="LearnMore"
+            onClick={props.heading}>Learn More .. </button>
+          </div>
+      
+        
+      </div>
        
 
 
 
         {/* <div className="AboutBase">
-          <h1></h1>
-          <p>Sanyo Engineering Pte Ltd was establish in Feb 2014, as a young,
-    dynamic contractor specializing in the Integrated Civil Engineering,
-    Project Management and M&E Works. We have been constantly striving hard
-    to greater heights through hard work, innovation, value engineering and
-    sustainable progressive growth providing responsive and quality services to our clients.</p>
           <h2><u>Civil Engineering Construction Works/PLANT CIVIL WORKS</u></h2>
           <li>Construction of Roads</li>
           <li>Widening, Extension, Re-marking and Maintenance of Roads</li>
@@ -102,7 +131,6 @@ timely, efficient and make sure you’re satisfied every step of the way.</p>
           </ul>
 
         </div> */}
-      </div>
 
     </div>
 

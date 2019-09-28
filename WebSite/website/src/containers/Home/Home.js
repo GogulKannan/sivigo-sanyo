@@ -1,11 +1,15 @@
 import React from 'react';
 import './Home.css';
+import homeBg1 from '../../assets/Images/home/1.png';
+import homeBg2 from '../../assets/Images/home/2.png';
+import homeBg3 from '../../assets/Images/home/3.png';
+import homeBg4 from '../../assets/Images/home/4.png';
 
 function Home() {
   return (
     
 <div className="App">
-      <div className="pimg1">
+      <div className="pimg"  style={{backgroundImage: "url(" + homeBg1 + ")"}}>
           <div className="ptext">
             <span className="border">
             Construction at its best
@@ -15,7 +19,7 @@ function Home() {
       <section className="section section-light2">
         <h2 className="my-header">OUR MISSION</h2>
       </section>
-      <div className="pimg2">
+      <div className="pimg" style={{backgroundImage: "url(" + homeBg2 + ")"}}>
         <div className="ptext-quote">
           <div className="quote-container">
             <div className="quote-text">
@@ -27,7 +31,7 @@ function Home() {
       <section className="section section-light">
         <h2 className="my-header">Our vision</h2>
       </section>
-      <div className="pimg3">
+      <div className="pimg" style={{backgroundImage: "url(" + homeBg3 + ")"}}>
         <div className="ptext-quote">
           <div className="quote-container">
             <div className="quote-text">
@@ -39,7 +43,7 @@ function Home() {
       <section className="section section-light2">
         <h2 className="my-header">OUR MOTTO</h2>
       </section>
-      <div className="pimg4">
+      <div className="pimg" style={{backgroundImage: "url(" + homeBg4 + ")"}}>
       <div className="ptext">
             <span className="border-rev">
             YOUR SATISFACTION IS OUR PRIORITY
