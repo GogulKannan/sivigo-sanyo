@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
-
+body{
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0) !important;
+}
 .App {
   height:100vh;
   margin:0;
@@ -13,7 +15,7 @@
 }
 .pimg1, .pimg2, .pimg3,.pimg4{
   position:relative;
-  opacity:0.70;
+  opacity:1;
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -152,7 +154,7 @@
 }
 
 @media(max-width:768px){
-  .pimg1, .pimg2, .pimg3{
+  .pimg1, .pimg2, .pimg3,.pimg4{
      background-attachment:scroll; 
   }  
   .ptext2{
