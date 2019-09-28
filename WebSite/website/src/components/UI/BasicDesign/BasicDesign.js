@@ -9,13 +9,15 @@ let learnMore = null;
 
 class BasicDesign extends Component {
     state = {
-        showModal: false
+        showModal: false,
+        heading:"SCAFFOLDING WORKS"
       }
     
     
       showMoreDetails = () => {
         this.setState({ showModal: true });
-        learnMore = <LearnMore heading="heading 1" />;
+        console.log("showMore")
+        learnMore = <LearnMore heading={this.state.heading} />;
       }
     
       closeShowMore = () => {
@@ -33,6 +35,7 @@ class BasicDesign extends Component {
         }          
         return (
             <Aux>
+                {/* this.state.heading=this.props.header; */}
                 <section className={attachedClasses.join(' ')}>
                     <h2 className="my-header">{this.props.header}</h2>
                 </section>                
