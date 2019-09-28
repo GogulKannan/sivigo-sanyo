@@ -1,30 +1,18 @@
 import React, { Component } from 'react';
 import Aux from '../../../hoc/_Aux/_Aux';
 import  './BasicDesign.css';
-import Modal from '../Modal/Modal';
-import LearnMore from '../../../components/LearnMore/LearnMore';
 
-let learnMore = null;
-
-
+let detailsObj = [];
 class BasicDesign extends Component {
-    state = {
-        showModal: false,
-        heading:"SCAFFOLDING WORKS"
-      }
-    
-    
-      showMoreDetails = () => {
-        this.setState({ showModal: true });
-        console.log("showMore")
-        learnMore = <LearnMore heading={this.state.heading} />;
-      }
-    
-      closeShowMore = () => {
-        this.setState({ showModal: false });
-      }
 
     render () {
+        var tempObj = {
+            header: this.props.header,
+            content: this.props.content
+        }
+
+        detailsObj[this.props.id] = tempObj;
+
         let attachedClasses = ["section"];
         if (this.props.side && this.props.side === 1) {
             attachedClasses = ["section", "section-light"];
@@ -42,12 +30,8 @@ class BasicDesign extends Component {
                 <div className="pimg" style={{backgroundImage: "url(" + this.props.bg + ")"}}>
                 <button 
                     className="LearnMore"
-                    onClick={this.showMoreDetails}>Learn More .. </button>
+                    onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>Learn More .. </button>
                 </div>
-
-                <Modal show={this.state.showModal} modalClosed={this.closeShowMore}>
-                    {learnMore}
-                </Modal>
             </Aux>
         )
     }

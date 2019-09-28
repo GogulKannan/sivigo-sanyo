@@ -30,7 +30,7 @@ class Toolbar extends Component {
       // Hide or show the menu.
       handleScroll = () => {
         const { prevScrollpos } = this.state;
-    
+  
         const currentScrollPos = window.pageYOffset;
         let visible = prevScrollpos > currentScrollPos;
     
@@ -42,6 +42,7 @@ class Toolbar extends Component {
           prevScrollpos: currentScrollPos,
           visible
         });
+
       };
 
     render () {
