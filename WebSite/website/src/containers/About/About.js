@@ -4,8 +4,10 @@ import aboutBg1 from '../../assets/Images/about/1.png';
 import BasicDesign from '../../components/UI/BasicDesign/BasicDesign';
 import aboutBg2 from '../../assets/Images/about/2.png';
 import aboutBg3 from '../../assets/Images/about/3.png';
+import aboutBg4 from '../../assets/Images/about/4.png';
+import aboutBg5 from '../../assets/Images/about/5.png';
 import aboutBg6 from '../../assets/Images/about/6.png';
-
+import aboutBg7 from '../../assets/Images/about/7.png';
 
 
 
@@ -38,10 +40,10 @@ class About extends Component {
 
         <BasicDesign bg={aboutBg2} side={0} header="" />
         <BasicDesign bg={aboutBg3} side={1} header="SCAFFOLDING WORKS" />
-        <BasicDesign bg={aboutBg1} side={2} header="INSULATION WORKS" />
-        <BasicDesign bg={aboutBg1} side={1} header="MANPOWER PROVISION" />
-        <BasicDesign bg={aboutBg1} side={2} header="BLASTING / PAINTING WORKS" />
-        <BasicDesign bg={aboutBg6} side={1} header="MAINTENANCE PROCESS PLANT" />
+        <BasicDesign bg={aboutBg4} side={2} header="INSULATION WORKS" />
+        <BasicDesign bg={aboutBg5} side={1} header="MANPOWER PROVISION" />
+        <BasicDesign bg={aboutBg6} side={2} header="BLASTING / PAINTING WORKS" />
+        <BasicDesign bg={aboutBg7} side={1} header="MAINTENANCE PROCESS PLANT" />
 
   
  {/* <div className="AboutBase">
