@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Aux from '../../../hoc/_Aux/_Aux';
 import  './BasicDesign.css';
 
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
+
 let detailsObj = [];
 class BasicDesign extends Component {
 
@@ -21,12 +24,19 @@ class BasicDesign extends Component {
             attachedClasses = ["section", "section-light2"];
         }else{
             attachedClasses = ["section", "section-hidden"];
-        }          
+        }        
+        
+        let animaion = "slideInLeft";
+        if(this.props.animation ===1){
+            animaion = "slideInRight";
+        }
         return (
             <Aux>
                 {/* this.state.heading=this.props.header; */}
                 <section className={attachedClasses.join(' ')}>
-                    <h2 className="my-header">{this.props.header}</h2>
+                    <ScrollAnimation animateIn={animaion} offset={50}>
+                        <h2 className="my-header">{this.props.header}</h2>
+                    </ScrollAnimation>   
                 </section>                
                 <div className="pimg" style={{backgroundImage: "url(" + this.props.bg + ")"}}>
                 <div  className = "ptext-cardcontent">
