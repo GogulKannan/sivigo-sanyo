@@ -157,7 +157,7 @@ body{
     font-weight: 900;
     letter-spacing: 1px;    
   }
-  .pimg2 .quote-container{
+  .pimg .quote-container{
     font-family: 'Satisfy', 'Dancing Script', serif;
     font-size: 7vw;
     color: #303633;
@@ -204,7 +204,7 @@ body{
 }
 
 @media(max-width:350px){
-  .pimg2 .quote-container{
+  .pimg .quote-container{
     font-family: 'Satisfy', 'Dancing Script', serif;
     font-size: 7vw;
     color: #303633;

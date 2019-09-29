@@ -31,7 +31,7 @@ function Home() {
       <section className="section section-light">
         <h2 className="my-header">Our vision</h2>
       </section>
-      <div className="pimg" style={{backgroundImage: "url(" + homeBg3 + ")"}}>
+      <div className="pimg pimg3" style={{backgroundImage: "url(" + homeBg3 + ")"}}>
         <div className="ptext-quote">
           <div className="quote-container">
             <div className="quote-text">

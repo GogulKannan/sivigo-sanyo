@@ -9,7 +9,50 @@
     background-color: #e7e7e7;
     padding: 32px 16px;
     box-sizing: border-box;
-    transition: transform 0.3s ease-out;
+  }
+
+.initial-close{
+    display: none;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes open-sidebar {
+    from {
+        left: -100%;
+    }      
+    to{
+        left: 0%;      
+    }
+}
+
+/* Standard syntax */
+@keyframes open-sidebar {
+    from {
+        left: -100%;
+    }      
+    to{
+        left: 0%;   
+    }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes close-sidebar {
+    from {
+        left: 70%;
+    }      
+    to{
+        left: 0%;    
+    }
+}
+
+/* Standard syntax */
+@keyframes close-sidebar {
+    from {
+        left: 70%;
+    }      
+    to{
+        left: 0%;     
+    }
 }
 
 @media (min-width: 800px) {
@@ -19,11 +62,20 @@
 }
 
 .Open {
+    display: block;
     transform: translateX(0);
+    -webkit-animation-name: open-sidebar; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: open-sidebar;
+    animation-duration: 0.5s;    
 }
 
 .Close {
     transform: translateX(-100%);
+    -webkit-animation-name: close-sidebar; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: close-sidebar;
+    animation-duration: 0.5s;     
 }
 
 /* .Logo {
