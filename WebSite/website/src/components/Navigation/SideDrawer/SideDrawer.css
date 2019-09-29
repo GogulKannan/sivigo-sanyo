@@ -38,20 +38,20 @@
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes close-sidebar {
     from {
-        left: 70%;
+        left: 280px;
     }      
     to{
-        left: 0%;    
+        left: 0px;    
     }
 }
 
 /* Standard syntax */
 @keyframes close-sidebar {
     from {
-        left: 70%;
+        left: 280px;
     }      
     to{
-        left: 0%;     
+        left: 0px;     
     }
 }
 
@@ -62,7 +62,6 @@
 }
 
 .Open {
-    display: block;
     transform: translateX(0);
     -webkit-animation-name: open-sidebar; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */

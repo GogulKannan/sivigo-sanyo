@@ -4,6 +4,8 @@ import homeBg1 from '../../assets/Images/home/1.png';
 import homeBg2 from '../../assets/Images/home/2.png';
 import homeBg3 from '../../assets/Images/home/3.png';
 import homeBg4 from '../../assets/Images/home/4.png';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 function Home() {
   return (
@@ -17,7 +19,9 @@ function Home() {
           </div>
       </div>
       <section className="section section-light2">
+      <ScrollAnimation animateIn="slideInRight" offset={50}>
         <h2 className="my-header">OUR MISSION</h2>
+      </ScrollAnimation>        
       </section>
       <div className="pimg" style={{backgroundImage: "url(" + homeBg2 + ")"}}>
         <div className="ptext-quote">
@@ -29,7 +33,9 @@ function Home() {
         </div>
       </div>
       <section className="section section-light">
-        <h2 className="my-header">Our vision</h2>
+        <ScrollAnimation animateIn="slideInLeft" offset={50}>
+          <h2 className="my-header">Our vision</h2>
+        </ScrollAnimation>  
       </section>
       <div className="pimg pimg3" style={{backgroundImage: "url(" + homeBg3 + ")"}}>
         <div className="ptext-quote">
@@ -41,7 +47,9 @@ function Home() {
         </div>
       </div>
       <section className="section section-light2">
-        <h2 className="my-header">OUR MOTTO</h2>
+        <ScrollAnimation animateIn="fadeInRight"  offset={50}>
+          <h2 className="my-header">OUR MOTO</h2>
+        </ScrollAnimation>  
       </section>
       <div className="pimg" style={{backgroundImage: "url(" + homeBg4 + ")"}}>
       <div className="ptext">
