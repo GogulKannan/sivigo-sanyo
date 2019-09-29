@@ -16,6 +16,10 @@ import {Card,CardDeck} from 'react-bootstrap';
 
 import man from '../.././assets/Images/about/man.svg';
 
+
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
+
 let learnMore = null;
 let currentScrollPosAbout = 0;
 
@@ -68,15 +72,17 @@ class About extends Component {
             </span>
           </div>
         </div>
-        <section className="section section-light2">
+        <section className="section section-light-about">
           <h2 className="my-header-main">WHAT WE DO</h2>
-          <div className="ptext-aboutMessage">
-            Sanyo Engineering Pte Ltd was establish in Feb 2014, as a young,
-            dynamic contractor specializing in the Integrated Civil Engineering,
-            Project Management and M&E Works. We have been constantly striving hard
-            to greater heights through hard work, innovation, value engineering and
-            sustainable progressive growth providing responsive and quality services to our clients.
-        </div>
+          <ScrollAnimation animateIn="slideInLeft" offset={50}>
+            <div className="ptext-aboutMessage">
+                Sanyo Engineering Pte Ltd was establish in Feb 2014, as a young,
+                dynamic contractor specializing in the Integrated Civil Engineering,
+                Project Management and M&E Works. We have been constantly striving hard
+                to greater heights through hard work, innovation, value engineering and
+                sustainable progressive growth providing responsive and quality services to our clients.
+            </div>
+          </ScrollAnimation> 
           <h2 className="my-header-sub">PLANT CIVIL WORK</h2>
         </section>
 
@@ -85,6 +91,7 @@ class About extends Component {
           side={0} 
           header="PLANT CIVIL WORK" 
           id={1} 
+          animation={0}
           subHeading="SAFETY WORKS"
           content="Since its founding, Sanyo Engineering Pte Ltd has been one of the most trusted names in the industry. Hire us for this service and
           learn how we cater to the needs of each client, ensuring the results you need and deserve." 
@@ -100,6 +107,7 @@ class About extends Component {
           side={1} 
           header="SCAFFOLDING WORKS"  
           id={2}
+          animation={0}
           subHeading="BUILT WITH GOOD SUPPORT"
           content="Since its founding, Sanyo Engineering Pte Ltd has been one of the most trusted names in the industry.
           Hire us for this service and learn how we cater to the needs of each client,
@@ -112,6 +120,7 @@ class About extends Component {
           side={2} 
           header="INSULATION WORKS"  
           id={3} 
+          animation={1}
           subHeading="ATTENTION TO DETAILS"
           content="Sanyo Engineering Pte Ltd is committed to getting the job done, especially when it comes to this service. You can count on us to be professional,
           timely, efficient and make sure you’re satisfied every step of the way." 
@@ -124,6 +133,7 @@ class About extends Component {
           side={1} 
           header="MANPOWER PROVISION"  
           id={4} 
+          animation={0}
           subHeading="SKILLED AND EXPERIENCE"
           content="We have the experience and skills necessary to tackle just about every type of job that comes our way. With Sanyo Engineering Pte Ltd,
           clients know exactly what to expect - professionalism, efficiency and exceptional results." 
@@ -137,6 +147,7 @@ class About extends Component {
           side={2} 
           header="BLASTING / PAINTING WORKS"  
           id={5}
+          animation={1}
           subHeading= "GOOD QUALITY FINISH"
           content="We have the experience and skills necessary to tackle just about every type of job 
           that comes our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - 
@@ -151,6 +162,7 @@ class About extends Component {
           side={1} 
           header="MAINTENANCE PROCESS PLANT"  
           id={6} 
+          animation={0}
           subHeading= "QUALITY MANAGEMENT"
           content="We have the experience and skills necessary to tackle just about every type of job that comes 
           our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - 
