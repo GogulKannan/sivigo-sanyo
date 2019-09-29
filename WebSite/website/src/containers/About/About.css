@@ -40,7 +40,7 @@
   text-transform:uppercase;
 }
 
-.about-heading .border{
+.about-heading .borders{
   background-color:#111;
   color:#fff;
   padding:20px;
@@ -128,7 +128,9 @@
   
 }
 
-
+.team{
+  padding: 15px 30px;
+}
 
 
 

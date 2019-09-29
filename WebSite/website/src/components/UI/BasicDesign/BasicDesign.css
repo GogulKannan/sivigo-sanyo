@@ -7,9 +7,11 @@
     outline: none;
     cursor: pointer;
     border: 4px solid black;
-    color: black;   
-    font-size: 1.2em;
+    color: black; 
+    letter-spacing: 4px;  
+    font-size: 1em;
     padding: 15px 30px;
+    border-radius: 10px;
   }
 
   .cardMain{

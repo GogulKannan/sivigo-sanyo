@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from './hoc/Layout/Layout';
 import Home from './containers/Home/Home'
 import About from './containers/About/About';
 import Project from './containers/Project/Project';
 import Contact from './containers/Contact/Contact';
+
+
 
 
 class App extends Component {
