@@ -4,9 +4,9 @@ import logoImage from '../../assets/Images/logo.png';
 import   './Logo.css';
 
 const logo = (props) => (
-    <div className="Logo" style={{height: props.height}}>
+    // <div className="Logo" style={{height: props.height}}>
         <img src={logoImage} alt="logo" />
-    </div>
+    // </div>
 );
 
 export default logo;

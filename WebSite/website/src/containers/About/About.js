@@ -30,7 +30,10 @@ class About extends Component {
 
 
     console.log("showMore")
-    learnMore = <LearnMore heading={detailsObj[id].header} content={detailsObj[id].content}/>;
+    learnMore = <LearnMore 
+                  heading={detailsObj[id].header} 
+                  modalList={detailsObj[id].modalList} 
+                  content={detailsObj[id].content}/>;
 
   }
 
@@ -63,90 +66,89 @@ class About extends Component {
           <h2 className="my-header-sub">PLANT CIVIL WORK</h2>
         </section>
 
-        <BasicDesign bg={aboutBg2} side={0} header="PLANT CIVIL WORK" id={1} content="this is my content for 1" modalShow={this.showMoreDetails}/>
-        <BasicDesign bg={aboutBg3} side={1} header="SCAFFOLDING WORKS"  id={2} modalShow={this.showMoreDetails}/>
-        <BasicDesign bg={aboutBg4} side={2} header="INSULATION WORKS"  id={3} modalShow={this.showMoreDetails}/>
-        <BasicDesign bg={aboutBg5} side={1} header="MANPOWER PROVISION"  id={4} modalShow={this.showMoreDetails}/>
-        <BasicDesign bg={aboutBg6} side={2} header="BLASTING / PAINTING WORKS"  id={5} modalShow={this.showMoreDetails}/>
-        <BasicDesign bg={aboutBg7} side={1} header="MAINTENANCE PROCESS PLANT"  id={6} modalShow={this.showMoreDetails}/>
+        <BasicDesign 
+          bg={aboutBg2} 
+          side={0} 
+          header="PLANT CIVIL WORK" 
+          id={1} 
+          subHeading="SAFETY WORKS"
+          content="Since its founding, Sanyo Engineering Pte Ltd has been one of the most trusted names in the industry. Hire us for this service and
+          learn how we cater to the needs of each client, ensuring the results you need and deserve." 
+          modalList ={[{id: 1, value:"Construction of Roads"},
+          {id:2,value:"Widening, Extension, Re-marking and Maintenance of Roads"},
+          {id:3,value:"Construction of Walkways"},
+          {id:4,value:"Construction & Maintenance of Road Drainage"},
+          {id:5,value:"Equipment foundation"},
+          {id:6,value:"Cable Trench excavation and backfilling"}]}
+          modalShow={this.showMoreDetails}/>
+        <BasicDesign 
+          bg={aboutBg3} 
+          side={1} 
+          header="SCAFFOLDING WORKS"  
+          id={2}
+          subHeading="BUILT WITH GOOD SUPPORT"
+          content="Since its founding, Sanyo Engineering Pte Ltd has been one of the most trusted names in the industry.
+          Hire us for this service and learn how we cater to the needs of each client,
+          ensuring the results you need and deserve." 
+          modalList ={[{id: 1, value:"Erection and Dismantling of Scaffolds"},
+          {id:2,value:"Supply qualified scaffold supervisors and erectors"}]}
+          modalShow={this.showMoreDetails}/>
+        <BasicDesign 
+          bg={aboutBg4} 
+          side={2} 
+          header="INSULATION WORKS"  
+          id={3} 
+          subHeading="ATTENTION TO DETAILS"
+          content="Sanyo Engineering Pte Ltd is committed to getting the job done, especially when it comes to this service. You can count on us to be professional,
+          timely, efficient and make sure you’re satisfied every step of the way." 
+          modalList ={[{id: 1, value:"Hot and Cold Insulation Services"},
+          {id:2,value:"Supply of Insulation Materials"},
+          {id:3,value:"Installation of Insulation for pipes and equipment’s in Process & Construction Industry"}]}
+          modalShow={this.showMoreDetails}/>
+        <BasicDesign 
+          bg={aboutBg5} 
+          side={1} 
+          header="MANPOWER PROVISION"  
+          id={4} 
+          subHeading="SKILLED AND EXPERIENCE"
+          content="We have the experience and skills necessary to tackle just about every type of job that comes our way. With Sanyo Engineering Pte Ltd,
+          clients know exactly what to expect - professionalism, efficiency and exceptional results." 
+          modalList ={[{id: 1, value:"Provides professionals"},
+          {id:2,value:"skilled / semi-skilled tradesmen for the Process Maintenance & Construction"},
+          {id:3,value:"Building Construction"},
+          {id:4,value:"Oil and Gas Industry"}]}
+          modalShow={this.showMoreDetails}/>
+        <BasicDesign 
+          bg={aboutBg6} 
+          side={2} 
+          header="BLASTING / PAINTING WORKS"  
+          id={5}
+          subHeading= "GOOD QUALITY FINISH"
+          content="We have the experience and skills necessary to tackle just about every type of job 
+          that comes our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - 
+          professionalism, efficiency and exceptional results." 
+          modalList ={[{id: 1, value:"On Site Painting Services"},
+          {id:2,value:"On Site Blasting Services"},
+          {id:3,value:"Power Brush & Roller Painting"},
+          {id:4,value:"Hydro Jet Washing"}]}
+          modalShow={this.showMoreDetails}/>
+        <BasicDesign 
+          bg={aboutBg7}  
+          side={1} 
+          header="MAINTENANCE PROCESS PLANT"  
+          id={6} 
+          subHeading= "QUALITY MANAGEMENT"
+          content="We have the experience and skills necessary to tackle just about every type of job that comes 
+          our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - 
+          professionalism, efficiency and exceptional results." 
+          modalList ={[{id: 1, value:"?"}]}
+          modalShow={this.showMoreDetails}/>
 
         <Modal show={this.state.showModal} modalClosed={this.closeShowMore}>
                     {learnMore}
         </Modal>
   
- {/* <div className="AboutBase">
-          <h2><u>Civil Engineering Construction Works/PLANT CIVIL WORKS</u></h2>
-          <li>Construction of Roads</li>
-          <li>Widening, Extension, Re-marking and Maintenance of Roads</li>
-          <li>Construction of Walkways</li>
-          <li>Construction & Maintenance of Road Drainage</li>
-          <li>Equipment foundation</li>
-          <li>Cable Trench excavation and backfilling </li>
-          <h3>Safety Works</h3>
-          <p>Since its founding, Sanyo Engineering Pte Ltd has been one of the most trusted names in the industry. Hire us for this service and
-learn how we cater to the needs of each client, ensuring the results you need and deserve.</p>
-          <h2><u>Scaffolding Works</u></h2>
-          <li>Erection and Dismantling of Scaffolds</li>
-          <li>Supply qualified scaffold supervisors and erectors </li>
-          <h4>Built with Good Support</h4>
-          <p>Since its founding, Sanyo Engineering Pte Ltd has been one of the most trusted names in the industry.
-            Hire us for this service and learn how we cater to the needs of each client,
-        ensuring the results you need and deserve.</p>
-          <h2><u>INSULATION WORKS</u></h2>
-          <li>Hot and Cold Insulation Services</li>
-          <li>Supply of Insulation Materials</li>
-          <li>Installation of Insulation for pipes and equipment’s in Process & Construction
-Industry </li>
-          <h4>Attention to Details</h4>
-          <p>Sanyo Engineering Pte Ltd is committed to getting the job done, especially when it comes to this service. You can count on us to be professional,
-timely, efficient and make sure you’re satisfied every step of the way.</p>
-          <h2><u>MANPOWER PROVISION</u></h2>
-          <li>Provides professionals</li>
-          <li> skilled / semi-skilled tradesmen for the Process Maintenance & Construction</li>
-          <li> Building Construction</li>
-          <li> Oil and Gas Industry </li>
-          <h4>Skilled and Experience</h4>
-          <p>We have the experience and skills necessary to tackle just about every type of job that comes our way. With Sanyo Engineering Pte Ltd,
- clients know exactly what to expect - professionalism, efficiency and exceptional results.</p>
-          <h2><u>BLASTING / PAINTING WORKS</u></h2>
-          <li>On Site Blasting & Painting Services</li>
-          <li>Power Brush & Roller Painting</li>
-          <li>Hydro Jet Washing </li>
-          <h4>Good Quality Finish</h4>
-          <p>We have the experience and skills necessary to tackle just about every type of job that comes our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - professionalism, efficiency and exceptional results.</p>
-          <h2><u>MAINTENANCE PROCESS PLANT</u></h2>
-          <h4>Quality Management</h4>
-          <p>We have the experience and skills necessary to tackle just about every type of job that comes our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - professionalism, efficiency and exceptional results.</p>
-
-          <h3><u>Other Specialization:</u> </h3>
-          <li>Mechanical Works</li>
-          <li>Steel Structural Works</li>
-          <li>Concrete Repair Works</li>
-          <li>Coring Works</li>
-          <li>Demolition Works</li>
-          <li>Road Works</li>
-          <li>Excavation of Ground</li>
-          <li>Backfilling of Soil/ Sand </li>
-          <h1>THE SANYO TEAM</h1>
-
-          <ul className="flex-container">
-            <li className="flex-item">1</li>
-            <li className="flex-item">2</li>
-            <li className="flex-item">3</li>
-          </ul>
-
-          <ul className="flex-container">
-            <li className="flex-item">4</li>
-            <li className="flex-item">5</li>
-            <li className="flex-item">6</li>
-          </ul>
-
-          <ul className="flex-container">
-            <li className="flex-item-q">"tell me something"</li>
-            <li className="flex-item-q">"say hi all"</li>
-          </ul>
-
-        </div> */}
+ 
 
       </div>
     );

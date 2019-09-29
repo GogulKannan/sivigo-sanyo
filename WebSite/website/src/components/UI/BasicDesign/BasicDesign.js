@@ -8,7 +8,8 @@ class BasicDesign extends Component {
     render () {
         var tempObj = {
             header: this.props.header,
-            content: this.props.content
+            content: this.props.content,
+            modalList:this.props.modalList
         }
 
         detailsObj[this.props.id] = tempObj;
@@ -28,10 +29,16 @@ class BasicDesign extends Component {
                     <h2 className="my-header">{this.props.header}</h2>
                 </section>                
                 <div className="pimg" style={{backgroundImage: "url(" + this.props.bg + ")"}}>
+                <div  className = "ptext-cardcontent">
+                    <h3>{this.props.subHeading}</h3>
+                    <p>{this.props.content}</p>
                 <button 
                     className="LearnMore"
                     onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>Learn More .. </button>
                 </div>
+                </div>
+
+               
             </Aux>
         )
     }
