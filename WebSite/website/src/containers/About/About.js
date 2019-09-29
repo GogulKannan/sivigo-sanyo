@@ -13,6 +13,7 @@ import Modal from '../../components/UI/Modal/Modal';
 import LearnMore from '../../components/LearnMore/LearnMore';
 
 let learnMore = null;
+let currentScrollPosAbout = 0;
 
 class About extends Component {
 
@@ -33,16 +34,25 @@ class About extends Component {
     learnMore = <LearnMore 
                   heading={detailsObj[id].header} 
                   modalList={detailsObj[id].modalList} 
-                  content={detailsObj[id].content}/>;
+                  content={detailsObj[id].content}
+                  closeModal={this.closeShowMore}/>;
+
+    var startScroll = document.getElementsByClassName("AboutMain")[0];
+    if(startScroll){
+      currentScrollPosAbout = window.pageYOffset;
+      startScroll.classList.add("no-body-scroll");
+    }
 
   }
 
   closeShowMore = () => {
-    document.body.style.overflow = 'unset';
-
-    this.setState({ showModal: false });
+      var stopScroll = document.getElementsByClassName("AboutMain")[0];
+      if(stopScroll){
+        stopScroll.classList.remove("no-body-scroll");
+        window.scrollTo(0, currentScrollPosAbout);
+      }
+      this.setState({ showModal: false });
   }
-
 
   render() {
     return (

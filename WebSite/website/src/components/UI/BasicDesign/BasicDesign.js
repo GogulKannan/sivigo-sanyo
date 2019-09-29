@@ -30,11 +30,11 @@ class BasicDesign extends Component {
                 </section>                
                 <div className="pimg" style={{backgroundImage: "url(" + this.props.bg + ")"}}>
                 <div  className = "ptext-cardcontent">
-                    <h3>{this.props.subHeading}</h3>
+                    <h2>{this.props.subHeading}</h2>
                     <p>{this.props.content}</p>
                 <button 
                     className="LearnMore"
-                    onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>Learn More .. </button>
+                    onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>LEARN MORE</button>
                 </div>
                 </div>
 

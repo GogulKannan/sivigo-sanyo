@@ -24,11 +24,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .Modal {
         width: 70%;
-        left: calc(50% - 250px);
+        left: 15%;
+    }
+}
+@media(max-width:769px){
+    .Modal {
+        width: 90vw;
+        left: 5vw;
+        max-height: 90vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+@media(max-width:350px){
+    .Modal {
+        width: 90vw;
+        left: 5vw;
+        margin-top: 23vw;
+        max-height: 80vh;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 }

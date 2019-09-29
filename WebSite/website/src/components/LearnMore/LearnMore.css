@@ -1,7 +1,7 @@
 .LearnMoreLogo{
     align-items: center;
     height: 10vh;
-    width: 20vw;
+    width: 15vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,7 @@
 
 .learnMoreHeading{
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .learnMoreContent{
@@ -22,13 +22,30 @@
     margin-left: auto;
     height: 5vh;
     width: 10vw;
-    float:right!important;
+    float: right;
 }
-
-@media (max-width: 800px) {
+.closeBtn {
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    border: 4px solid black;
+    color: black;   
+    font-size: 1.2em;
+    padding: 15px 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+@media (max-width: 768px) {
     .learnMoreContent{
         padding: 0px 6px 0px 6px;
         font-size: 3vw;
         font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+    .LearnMoreLogo{
+        width: 40vw;
+    }
+    .learnMoreHeading{
+        font-size: 5vw;
     }
 }

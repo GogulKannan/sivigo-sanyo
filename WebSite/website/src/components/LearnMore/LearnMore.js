@@ -6,14 +6,9 @@ import logoImage from '../../assets/Images/logo.png';
 import bizsafe from '../../assets/Images/bizsafe-3-logo.png';
 
 
-
 class LearnMore extends Component {
     // This could be a functional component, doesn't have to be a class
-
     render () {
-
-        document.body.style.overflow = 'hidden';
-
         const heading = this.props.heading;
         const content = this.props.content;
         const modalList = this.props.modalList.map((item, key)=>
@@ -27,10 +22,9 @@ class LearnMore extends Component {
                 <div className="learnMoreContent">
                 <p>{content} </p>
                 <ul>{modalList}</ul>
+                <button className="closeBtn" onClick={this.props.closeModal}>CLOSE</button>
                 </div>
                 <img src={bizsafe} alt="logo" className="bizSafeLogo" />
-                {/* <Button btnType="Danger" clicked={this.props.purchaseCancelled}>CANCEL</Button>
-                <Button btnType="Success" clicked={this.props.purchaseContinued}>CONTINUE</Button> */}
             </Aux>
         );
     }
