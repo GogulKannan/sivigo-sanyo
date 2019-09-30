@@ -9,10 +9,11 @@ import aboutBg4 from '../../assets/Images/about/4.png';
 import aboutBg5 from '../../assets/Images/about/5.png';
 import aboutBg6 from '../../assets/Images/about/6.png';
 import aboutBg7 from '../../assets/Images/about/7.png';
+import aboutBg8 from '../../assets/Images/about/8.png';
 
 import Modal from '../../components/UI/Modal/Modal';
 import LearnMore from '../../components/LearnMore/LearnMore';
-import {Card,CardDeck} from 'react-bootstrap';
+import {Card,CardDeck, Container,Col,Row} from 'react-bootstrap';
 
 import man from '../.././assets/Images/about/man.svg';
 
@@ -173,50 +174,76 @@ class About extends Component {
         <Modal show={this.state.showModal} modalClosed={this.closeShowMore}>
                     {learnMore}
         </Modal>
-  
-        <div className="team">
-        <CardDeck>
-  <Card>
-    <Card.Img variant="top" src={man} />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src={man} />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src={man} />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardDeck>
+        <section className="section section-light2">
+          <ScrollAnimation animateIn="slideInRight" offset={50}>
+            <h2 className="my-header">OUR TEAM</h2>
+          </ScrollAnimation>        
+        </section>
+        <div className="pimg"  style={{backgroundImage: "url(" + aboutBg8 + ")"}}>
+          <div className="team">
+          <CardDeck>
+            <Card>
+              <Card.Img variant="top" src={man} />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src={man} />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This card has supporting text below as a natural lead-in to additional
+                  content.{' '}
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </Card.Footer>
+            </Card>
+            <Card>
+              <Card.Img variant="top" src={man} />
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This card has even longer content than the first to
+                  show that equal height action.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </Card.Footer>
+            </Card>
+          </CardDeck>
+          </div>
+          <div className = "teamSay">
+          <CardDeck>
+            <Card>
+              <Card.Body>
+                <Card.Text>
+                  Some quick example text to gogul kannan build on the card title and make up the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+              </Card>
+              <Card>
+              <Card.Body>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+              </Card>
+              </CardDeck>
+          </div>
+
+
         </div>
 
       </div>
