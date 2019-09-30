@@ -13,7 +13,7 @@ function Home() {
 <div className="App">
       <div className="pimg"  style={{backgroundImage: "url(" + homeBg1 + ")"}}>
           <div className="ptext">
-            <span className="border">
+            <span className="borders">
             Construction at its best
             </span>
           </div>
