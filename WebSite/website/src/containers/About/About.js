@@ -67,7 +67,7 @@ class About extends Component {
     return (
       <div className="AboutMain" >
         <div className="pimg" style={{ backgroundImage: "url(" + aboutBg1 + ")" }}>
-          <div className="about-heading">
+          <div className="ptext">
             <span className="borders">
               CONSTRUCTION PROFESSIONALS
             </span>
