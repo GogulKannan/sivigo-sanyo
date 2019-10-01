@@ -1,0 +1,20 @@
+.stepImage{
+    /* background: red; */
+     /* min-height: 80vh; */
+}
+
+.pcard{
+    /* overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+     padding-top: 10vh;
+     padding-bottom: 10vh;
+    /* height: 100vh; */
+}
+
+.pcardPara{
+    /* background:#e7e7e7 ; */
+    /* min-height: 80vh; */
+    
+}

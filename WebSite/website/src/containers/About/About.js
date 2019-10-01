@@ -13,7 +13,7 @@ import aboutBg8 from '../../assets/Images/about/8.png';
 
 import Modal from '../../components/UI/Modal/Modal';
 import LearnMore from '../../components/LearnMore/LearnMore';
-import {Card,CardDeck, Container,Col,Row} from 'react-bootstrap';
+import {Card,CardDeck} from 'react-bootstrap';
 
 import man from '../.././assets/Images/about/man.svg';
 
