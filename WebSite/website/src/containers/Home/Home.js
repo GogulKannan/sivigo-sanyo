@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Home.css';
 import homeBg1 from '../../assets/Images/home/1.png';
 import homeBg2 from '../../assets/Images/home/2.png';
@@ -7,7 +7,12 @@ import homeBg4 from '../../assets/Images/home/4.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
-function Home() {
+class Home extends Component {
+
+
+
+  
+  render() {
   return (
     
 <div className="App">
@@ -61,6 +66,7 @@ function Home() {
     </div>
     
   );
+}
 }
 
 export default Home;

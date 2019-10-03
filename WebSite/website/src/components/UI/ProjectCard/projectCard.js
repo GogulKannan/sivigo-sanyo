@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './projectCard.css';
-import project1 from '../../../assets/Images/project/1.jpg';
+import project1 from '../../../assets/Images/project/1.png';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Card, ListGroup, Container, Col, Row } from 'react-bootstrap';
-import DummyImage from "../../../assets/Images/project/dummyImg2.png"
+import { Card, Container, Col, Row, Table } from 'react-bootstrap';
+
 import logoImage from '../../../assets/Images/logo.png';
 
 class ProjectCard extends Component {
@@ -16,31 +16,43 @@ class ProjectCard extends Component {
                         <h2 className="my-header">{this.props.header}</h2>
                     </ScrollAnimation>
                 </section>
-                <div className="pimg" style={{ backgroundImage: "url(" + project1 + ")" }}>
+                <div className="pimg" style={{ backgroundImage: "url(" + project1 + ")" }}> >
                     <div className="pcard">
                         <Container>
                             <Row>
                                 <Col className="stepImage" lg={{ span: 7 }}>
-                                    <Card.Img src={DummyImage} />
-                                    <Card.Footer/>
+                                    <Card.Img src={this.props.image} />
+                                    <Card.Footer />
                                 </Col>
                                 <Col lg={{ span: 5 }}>
                                     <Card className="pcardPara" bg="light" text="black" >
                                         <Card.Header><img src={logoImage} alt="logo" className="LearnMoreLogo" /></Card.Header>
                                         <Card.Body>
-                                            <Card.Title>Primary Card Title</Card.Title>
-                                            <Card.Text>
-                                                Some quick example text to build on the card title and make up the bulk
-                                                of the card's content.Some quick example text to build on the card title and make up the bulk
-                                                of the card's content.
-                                            </Card.Text>
-                                            <ListGroup>
-                                                <ListGroup.Item>CLIENT/OWNER :</ListGroup.Item>
-                                                <ListGroup.Item>MAIN CONTRACTOR: </ListGroup.Item>
-                                                <ListGroup.Item>DESCRIPTION OF PROJECT</ListGroup.Item>
-                                                <ListGroup.Item>SCOPE OF WORK</ListGroup.Item>
-                                                <ListGroup.Item>DURATION</ListGroup.Item>
-                                            </ListGroup>
+                                            
+                                            <Table striped bordered hover responsive  >
+                                                <tbody>
+                                                    <tr>
+                                                        <td>CLIENT/OWNER</td>
+                                                        <td>{this.props.list1}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>MAIN CONTRACTOR</td>
+                                                        <td>{this.props.list2}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DESCRIPTION OF PROJECT</td>
+                                                        <td>{this.props.list3}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>SCOPE OF WORK</td>
+                                                        <td>{this.props.list4}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DURATION</td>
+                                                        <td>{this.props.list5}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </Table>
                                         </Card.Body>
                                     </Card>
                                 </Col>
