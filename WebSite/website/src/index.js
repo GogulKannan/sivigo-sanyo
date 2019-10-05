@@ -3,12 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router';
+
+// Create history object.
+import createHistory from 'history/createBrowserHistory';
+const history = createHistory();
+
+// Listen to history changes.
+// You can unlisten by calling the constant (`unlisten()`).
+history.listen((location, action) => {
+    window.scrollTo(0, 0)
+});
+
 
 const app = (
-    <BrowserRouter>
+    <Router history={history}>
         <App />
-    </BrowserRouter>
+    </Router>
 );
 
 ReactDOM.render( app, document.getElementById( 'root' ) );
