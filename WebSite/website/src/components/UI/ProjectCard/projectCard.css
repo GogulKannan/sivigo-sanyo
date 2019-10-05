@@ -16,5 +16,10 @@
 .pcardPara{
     /* background:#e7e7e7 ; */
     /* min-height: 80vh; */
+    font-weight: bold;
     
+}
+
+.pimg-plain{
+    background-color: rgba(0, 0, 0, 0.5);
 }

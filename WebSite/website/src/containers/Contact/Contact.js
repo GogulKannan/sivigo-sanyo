@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Contact.css';
 
-function Contact() {
+class Contact extends Component {
+  render() {
     return (
-      
-  <div className="AboutBase">
-        
-            <div className="ptext">
-              <span className="border">
-              Contact Building....
+
+      <div className="AboutBase">
+
+        <div className="ptext">
+          <span className="border">
+            Contact Building....
               </span>
-            </div>
-        
         </div>
- );
+
+      </div>
+    );
+  }
 }
-        
+
 export default Contact;
