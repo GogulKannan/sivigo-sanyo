@@ -1,6 +1,7 @@
 .stepImage{
-    /* background: red; */
+    background: white;
      /* min-height: 80vh; */
+
 }
 
 .pcard{
@@ -8,18 +9,24 @@
     display: flex;
     justify-content: center;
     align-items: center; */
-     padding-top: 10vh;
-     padding-bottom: 10vh;
+     /* padding-top: 10vh; */
+     /* padding-bottom: 10vh; */
     /* height: 100vh; */
+}
+
+.pcard2{
+     /* padding-top: 10vh;
+     padding-bottom: 10vh; */
 }
 
 .pcardPara{
     /* background:#e7e7e7 ; */
-    /* min-height: 80vh; */
+    min-height: 80vh;
     font-weight: bold;
-    
 }
 
 .pimg-plain{
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+

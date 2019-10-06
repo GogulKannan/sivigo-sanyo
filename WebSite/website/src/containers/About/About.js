@@ -15,7 +15,7 @@ import Modal from '../../components/UI/Modal/Modal';
 import LearnMore from '../../components/LearnMore/LearnMore';
 import {Card,CardDeck} from 'react-bootstrap';
 
-import man from '../.././assets/Images/about/man.svg';
+import man from '../.././assets/Images/about/man.jpg';
 
 
 import ScrollAnimation from 'react-animate-on-scroll';
