@@ -30,6 +30,11 @@ class BasicDesign extends Component {
         if(this.props.animation ===1){
             animaion = "slideInRight";
         }
+
+        let buttonName = "LEARN MORE";
+        if(this.props.buttonName &&  this.props.buttonName.length > 0){
+            buttonName = this.props.buttonName;
+        }
         return (
             <Aux>
                 {/* this.state.heading=this.props.header; */}
@@ -44,7 +49,7 @@ class BasicDesign extends Component {
                     <p>{this.props.content}</p>
                 <button 
                     className="LearnMore"
-                    onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>LEARN MORE</button>
+                    onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>{buttonName}</button>
                 </div>
                 </div>
 

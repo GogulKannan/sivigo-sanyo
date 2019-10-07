@@ -158,47 +158,26 @@ class About extends Component {
           {id:3,value:"Power Brush & Roller Painting"},
           {id:4,value:"Hydro Jet Washing"}]}
           modalShow={this.showMoreDetails}/>
-        
-        <section className="section section-light">
-            <ScrollAnimation animateIn="slideInLeft" offset={50}>
-                <h2 className="my-header">OTHER SPECIALIZATION</h2>
-            </ScrollAnimation>   
-        </section>                
-        <div className="pimg" style={{backgroundImage: "url(" +aboutBg7+ ")"}}>
-          <Container className="otherSpec">
-          <Card  bg="light" text="black" >
-          <Card.Body>
-            <ListGroup variant="flush">
-            <ListGroup.Item>Maintenance Services in Process Plant</ListGroup.Item>
-              <ListGroup.Item>Mechanical Works</ListGroup.Item>
-              <ListGroup.Item>Steel Structural Works</ListGroup.Item>
-              <ListGroup.Item>Concrete Repair Works</ListGroup.Item>
-              <ListGroup.Item>Coring Works</ListGroup.Item>
-              <ListGroup.Item>Demolition Works</ListGroup.Item>
-              <ListGroup.Item>Road Works</ListGroup.Item>
-              <ListGroup.Item>Excavation of Ground</ListGroup.Item>
-              <ListGroup.Item>Backfilling of Soil/Sand</ListGroup.Item>
-            </ListGroup>   
-            </Card.Body>     
-        </Card>
-          </Container>
-        
-        </div>
-
-
-
-        {/* <BasicDesign 
+        <BasicDesign 
           bg={aboutBg7}  
           side={1} 
-          header="MAINTENANCE PROCESS PLANT"  
+          header="OTHER SPECIALIZATION"  
           id={6} 
           animation={0}
-          subHeading= "QUALITY MANAGEMENT"
+          subHeading= "MAINTENANCE PROCESS PLANT"
           content="We have the experience and skills necessary to tackle just about every type of job that comes 
           our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - 
           professionalism, efficiency and exceptional results." 
-          modalList ={[{id: 1, value:"?"}]}
-          modalShow={this.showMoreDetails}/> */}
+          buttonName = "OTHER WORKS"
+          modalList ={[{id: 1, value:"Mechanical Works"},
+          {id:2,value:"Steel Structural Works"},
+          {id:3,value:"Concrete Repair Works"},
+          {id:4,value:"Coring Works"},
+          {id:5,value:"Demolition Works"},
+          {id:6,value:"Road Works"},
+          {id:7,value:"Excavation of Ground"},
+          {id:8,value:"Backfilling of Soil/Sand"}]}
+          modalShow={this.showMoreDetails}/>
 
         <Modal show={this.state.showModal} modalClosed={this.closeShowMore}>
                     {learnMore}

@@ -22,7 +22,7 @@ class LearnMore extends Component {
                 <h1 className ="learnMoreHeading" >{heading}</h1>
                 <div className="learnMoreContent">
                 <p>{content} </p>
-                <ListGroup variant="flush">{modalList}</ListGroup>
+                <ListGroup>{modalList}</ListGroup>
                 <button className="closeBtn" onClick={this.props.closeModal}>CLOSE</button>
                 </div>
                 <img src={bizsafe} alt="logo" className="bizSafeLogo" />

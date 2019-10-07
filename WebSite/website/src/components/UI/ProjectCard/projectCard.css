@@ -1,7 +1,5 @@
 .stepImage{
     background: white;
-     /* min-height: 80vh; */
-
 }
 
 .pcard{
@@ -29,4 +27,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
