@@ -153,7 +153,13 @@
 
 
 
-
+.otherSpec{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
 
 
 /* can remove later */
@@ -216,3 +222,5 @@
   font-size: 3em;
   text-align: center;
   }
+
+ 

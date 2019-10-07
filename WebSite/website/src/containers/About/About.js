@@ -13,7 +13,7 @@ import aboutBg8 from '../../assets/Images/about/8.png';
 
 import Modal from '../../components/UI/Modal/Modal';
 import LearnMore from '../../components/LearnMore/LearnMore';
-import {Card,CardDeck} from 'react-bootstrap';
+import {Card,CardDeck,ListGroup,Container} from 'react-bootstrap';
 
 import man from '../.././assets/Images/about/man.jpg';
 
@@ -158,7 +158,36 @@ class About extends Component {
           {id:3,value:"Power Brush & Roller Painting"},
           {id:4,value:"Hydro Jet Washing"}]}
           modalShow={this.showMoreDetails}/>
-        <BasicDesign 
+        
+        <section className="section section-light">
+            <ScrollAnimation animateIn="slideInLeft" offset={50}>
+                <h2 className="my-header">OTHER SPECIALIZATION</h2>
+            </ScrollAnimation>   
+        </section>                
+        <div className="pimg" style={{backgroundImage: "url(" +aboutBg7+ ")"}}>
+          <Container className="otherSpec">
+          <Card  bg="light" text="black" >
+          <Card.Body>
+            <ListGroup variant="flush">
+            <ListGroup.Item>Maintenance Services in Process Plant</ListGroup.Item>
+              <ListGroup.Item>Mechanical Works</ListGroup.Item>
+              <ListGroup.Item>Steel Structural Works</ListGroup.Item>
+              <ListGroup.Item>Concrete Repair Works</ListGroup.Item>
+              <ListGroup.Item>Coring Works</ListGroup.Item>
+              <ListGroup.Item>Demolition Works</ListGroup.Item>
+              <ListGroup.Item>Road Works</ListGroup.Item>
+              <ListGroup.Item>Excavation of Ground</ListGroup.Item>
+              <ListGroup.Item>Backfilling of Soil/Sand</ListGroup.Item>
+            </ListGroup>   
+            </Card.Body>     
+        </Card>
+          </Container>
+        
+        </div>
+
+
+
+        {/* <BasicDesign 
           bg={aboutBg7}  
           side={1} 
           header="MAINTENANCE PROCESS PLANT"  
@@ -169,14 +198,14 @@ class About extends Component {
           our way. With Sanyo Engineering Pte Ltd, clients know exactly what to expect - 
           professionalism, efficiency and exceptional results." 
           modalList ={[{id: 1, value:"?"}]}
-          modalShow={this.showMoreDetails}/>
+          modalShow={this.showMoreDetails}/> */}
 
         <Modal show={this.state.showModal} modalClosed={this.closeShowMore}>
                     {learnMore}
         </Modal>
         <section className="section section-light2">
           <ScrollAnimation animateIn="slideInRight" offset={50}>
-            <h2 className="my-header">OUR TEAM</h2>
+            <h2 className="my-header">THE SANYO TEAM</h2>
           </ScrollAnimation>        
         </section>
         <div className="pimg"  style={{backgroundImage: "url(" + aboutBg8 + ")"}}>
@@ -192,7 +221,7 @@ class About extends Component {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">email@sanyo.com</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -205,7 +234,7 @@ class About extends Component {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">email@sanyo.com</small>
               </Card.Footer>
             </Card>
             <Card>
@@ -219,33 +248,12 @@ class About extends Component {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">email@sanyo.com</small>
               </Card.Footer>
             </Card>
           </CardDeck>
           </div>
-          <div className = "teamSay">
-          <CardDeck>
-            <Card>
-              <Card.Body>
-                <Card.Text>
-                  Some quick example text to gogul kannan build on the card title and make up the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-              </Card>
-              <Card>
-              <Card.Body>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-              </Card>
-              </CardDeck>
-          </div>
-
-
         </div>
-
       </div>
     );
   }
