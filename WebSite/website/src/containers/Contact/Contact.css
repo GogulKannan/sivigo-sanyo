@@ -11,17 +11,30 @@
 
 .contactCont{
   /* background: red; */
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+}
+
+.sendMessDiv{
+  background:#e7e7e7;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
 }
 
 .form-control{
   /* border: 1px solid #000000 !important; */
 }
 
+.contactUsheading{
+  padding-bottom: 7vh;
+  text-align: center;
+}
+
 .sendamessage{
   /* text-align: center; */
-  padding-bottom: 5vh;
+  /* padding-bottom: 5vh; */
 }
 
 .mapHolder{
@@ -34,6 +47,15 @@
   padding: 20vh;
 }
 
+.iconRow{
+  text-align: center;
+  font-weight: 700;
+}
+
+.iconHead{
+  padding-top: 3vh;
+}
+
 /* .ptext{
   position:absolute;
   top:50%;
@@ -44,6 +66,13 @@
   letter-spacing:8px;
   text-transform:uppercase;
 } */
+
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
 
 
 
