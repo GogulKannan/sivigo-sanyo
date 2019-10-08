@@ -44,12 +44,14 @@ class BasicDesign extends Component {
                     </ScrollAnimation>   
                 </section>                
                 <div className="pimg" style={{backgroundImage: "url(" + this.props.bg + ")"}}>
-                <div  className = "ptext-cardcontent">
-                    <h2 className = "learnMoreSubHeading">{this.props.subHeading}</h2>
-                    <p>{this.props.content}</p>
-                <button 
-                    className="LearnMore"
-                    onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>{buttonName}</button>
+                <div className = "centreContent">
+                    <div  className = "ptext-cardcontent">
+                        <h2 className = "learnMoreSubHeading">{this.props.subHeading}</h2>
+                        <p>{this.props.content}</p>
+                    <button 
+                        className="LearnMore"
+                        onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>{buttonName}</button>
+                    </div>
                 </div>
                 </div>
 
