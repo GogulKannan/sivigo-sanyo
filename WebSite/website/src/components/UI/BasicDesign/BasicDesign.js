@@ -32,8 +32,10 @@ class BasicDesign extends Component {
         }
 
         let buttonName = "LEARN MORE";
+        let animation = "zoomInDown";
         if(this.props.buttonName &&  this.props.buttonName.length > 0){
             buttonName = this.props.buttonName;
+            animation = "heartBeat";     
         }
         return (
             <Aux>
@@ -48,9 +50,12 @@ class BasicDesign extends Component {
                     <div  className = "ptext-cardcontent">
                         <h2 className = "learnMoreSubHeading">{this.props.subHeading}</h2>
                         <p>{this.props.content}</p>
-                    <button 
-                        className="LearnMore"
-                        onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>{buttonName}</button>
+                    <ScrollAnimation animateIn={animation}  offset={50}>
+                        <button 
+                            className="LearnMore"
+                            onClick={() => this.props.modalShow(detailsObj, this.props.id)} id={this.props.id}>{buttonName}
+                        </button>
+                    </ScrollAnimation>    
                     </div>
                 </div>
                 </div>
