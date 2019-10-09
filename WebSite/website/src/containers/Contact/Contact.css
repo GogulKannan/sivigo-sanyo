@@ -49,13 +49,19 @@
 
 .iconRow{
   text-align: center;
-  font-weight: 700;
 }
 
 .iconHead{
-  padding-top: 3vh;
+  padding: 3vh 0vh 3vh 0vh;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
+.iconContent{
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
 /* .ptext{
   position:absolute;
   top:50%;
@@ -68,10 +74,17 @@
 } */
 
 
-.btn-primary {
+.sendMessage {
   color: #fff;
   background-color: black;
   border-color: black;
+  margin-top: 5vh;
+}
+.sendMessage:hover {
+  color: #fff;
+  background-color: #e7e7e7;
+  border-color: black;
+  color: black;
 }
 
 
