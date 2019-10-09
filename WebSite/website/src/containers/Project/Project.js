@@ -22,6 +22,7 @@ import ca3C from '../../assets/Images/project/cal/3C.jpg';
 import ca3D from '../../assets/Images/project/cal/3D.jpg';
 
 import certBG from '../../assets/Images/project/certBG.png';
+import certImg from '../../assets/Images/project/cert.jpg';
 
 
 class Project extends Component {
@@ -38,16 +39,16 @@ class Project extends Component {
   componentDidMount() {
     window.onscroll = () => {
       // this.setState({currentScrollHeight: window.scrollY});
-      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
-    if (this.state.currentScrollHeight !== newScrollHeight){
-        this.setState({currentScrollHeight: newScrollHeight})
-    }
+      const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
+      if (this.state.currentScrollHeight !== newScrollHeight) {
+        this.setState({ currentScrollHeight: newScrollHeight })
+      }
     }
   }
 
-  
+
   render() {
-    const opacity = Math.min(100 / this.state.currentScrollHeight, 1)-0.1;
+    const opacity = Math.min(100 / this.state.currentScrollHeight, 1) - 0.1;
 
     return (
 
@@ -62,7 +63,7 @@ class Project extends Component {
 
         <ProjectCard
           header="HDB INDUSTRIAL COMPLEX KB 1"
-          side={1} 
+          side={1}
           headerAnimation="slideInLeft"
           order="0"
           colImageList={[ca1A, ca1B, ca1C, ca1D]}
@@ -85,9 +86,9 @@ class Project extends Component {
           list4="INSULATION FOR CHILLER PIPING"
           list5="FEB-17 - JUN-17"
         />
-         <ProjectCard
+        <ProjectCard
           header="PAINTING WORKS AT DENKA WAREHOUSE"
-          side={1} 
+          side={1}
           headerAnimation="slideInLeft"
           order="0"
           colImageList={[ca3A, ca3B, ca3C, ca3D]}
@@ -98,7 +99,7 @@ class Project extends Component {
           list5="SEP-16 - FEB-17"
         />
 
-        
+
 
 
 
@@ -218,13 +219,17 @@ class Project extends Component {
           </Container>
 
         </div>
-        
+
         <section className="section section-light2">
           <ScrollAnimation animateIn="slideInRight" offset={50}>
             <h2 className="my-header">BIZSAFE CERTIFICATE</h2>
           </ScrollAnimation>
         </section>
-        <div className="pimg biZcert" style={{ backgroundImage: "url(" +certBG  + ")" }}></div>
+        <div className="pimg biZcert" style={{ backgroundImage: "url(" + certBG + ")" }}>
+          <div className="bizDiv">
+            <img src={certImg} alt="cert" className="bizImg" />
+          </div>
+        </div>
 
         <div style={{ opacity }} className="arrow bounce" />
       </div>
