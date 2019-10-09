@@ -224,7 +224,9 @@ class Project extends Component {
             <h2 className="my-header">BIZSAFE CERTIFICATE</h2>
           </ScrollAnimation>
         </section>
-        <div className="pimg biZcert" style={{ backgroundImage: "url(" +certBG  + ")" }}></div>
+        <div className="pimg biZcert" style={{ backgroundImage: "url(" +certBG  + ")" }}>
+          
+        </div>
 
         <div style={{ opacity }} className="arrow bounce" />
       </div>
