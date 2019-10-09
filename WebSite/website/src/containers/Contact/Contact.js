@@ -9,15 +9,20 @@ import mapIC from '../../assets/Images/contact/map.png';
 
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 
-import { Form, Container, Card, Row, Col, Button, Image } from 'react-bootstrap';
+import { Form, Container, Row, Col, Button, Image } from 'react-bootstrap';
 
 class Contact extends Component {
-  state = {
-    showingInfoWindow: true,
-    activeMarker: {},
-    selectedPlace: {},
-  };
- 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentScrollHeight: window.scrollY,
+      showingInfoWindow: true,
+      activeMarker: {},
+      selectedPlace: {},
+    };
+  }
+
   onMarkerClick = (props, marker, e) =>
     this.setState({
       selectedPlace: props,
@@ -35,9 +40,26 @@ class Contact extends Component {
     }
   };
 
+  componentDidMount() {
+    window.onscroll = () => {
+      // this.setState({currentScrollHeight: window.scrollY});
+      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+    if (this.state.currentScrollHeight !== newScrollHeight){
+        this.setState({currentScrollHeight: newScrollHeight})
+    }
+    }
+  }
+
   render() {
+
+    const opacity = Math.min(100 / this.state.currentScrollHeight, 1)-0.1;
+
+
+
     return (
       <div className="contactMain">
+
+
         <div className="pimg" style={{ backgroundImage: "url(" + contactBk + ")" }}>
           <div className="ptext">
             <span className="borders">
@@ -103,18 +125,21 @@ class Contact extends Component {
               zoom={11}
               initialCenter={{ lat: 1.320109, lng: 103.629764}}
               >
-              <Marker position={{ lat: 1.320109, lng: 103.629764}} name="2 Tuas South Ave 2, #02-07, Tuas Vista, Singapore - 637601" onClick={this.onMarkerClick} link="https://www.google.com/maps/dir/?api=1&destination=2%20Tuas%20South%20Ave%202%20#02-07%20Tuas%20Vista%0ASingapore,%20637601%0ASingapore"/>
+              <Marker className="markerContent" position={{ lat: 1.320109, lng: 103.629764}} name="2 Tuas South Ave 2, #02-07, Tuas Vista, Singapore - 637601" ref={this.onMarkerClick} onClick={this.onMarkerClick} link="https://www.google.com/maps/dir/?api=1&destination=2%20Tuas%20South%20Ave%202%20#02-07%20Tuas%20Vista%0ASingapore,%20637601%0ASingapore"/>
               <InfoWindow
                 marker={this.state.activeMarker}
                 visible={this.state.showingInfoWindow}>
                   <div>
                     <p className="addressContent">{this.state.selectedPlace.name}</p>
-                    <a href={this.state.selectedPlace.link} target="_blank" className="directionContent">Directions</a>
+                    <a href={this.state.selectedPlace.link} target="_blank" rel="noopener noreferrer"  className="directionContent">Directions</a>
                   </div>
               </InfoWindow>
             </Map>
           </Container>
         </div>
+
+
+        <div style={{ opacity }} className="arrow bounce" />
 
 
       </div>

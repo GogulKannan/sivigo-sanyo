@@ -8,11 +8,27 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      currentScrollHeight: window.scrollY
+    };
+  }
 
-
+  componentDidMount() {
+    window.onscroll = () => {
+      // this.setState({currentScrollHeight: window.scrollY});
+      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+    if (this.state.currentScrollHeight !== newScrollHeight){
+        this.setState({currentScrollHeight: newScrollHeight})
+    }
+    }
+  }
   
   render() {
+    const opacity = Math.min(100 / this.state.currentScrollHeight, 1)-0.1;
+
   return (
     
 <div className="App">
@@ -62,7 +78,8 @@ class Home extends Component {
             YOUR SATISFACTION IS OUR PRIORITY
             </span>
           </div>
-      </div>      
+      </div>   
+      <div style={{ opacity }} className="arrow bounce" />   
     </div>
     
   );

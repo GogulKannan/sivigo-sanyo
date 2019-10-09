@@ -16,11 +16,39 @@ import ca2B from '../../assets/Images/project/cal/2B.jpg';
 import ca2C from '../../assets/Images/project/cal/2C.jpg';
 
 
+import ca3A from '../../assets/Images/project/cal/3A.jpg';
+import ca3B from '../../assets/Images/project/cal/3B.jpg';
+import ca3C from '../../assets/Images/project/cal/3C.jpg';
+import ca3D from '../../assets/Images/project/cal/3D.jpg';
+
+import certBG from '../../assets/Images/project/certBG.png';
 
 
 class Project extends Component {
 
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentScrollHeight: window.scrollY
+    };
+  }
+
+  componentDidMount() {
+    window.onscroll = () => {
+      // this.setState({currentScrollHeight: window.scrollY});
+      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+    if (this.state.currentScrollHeight !== newScrollHeight){
+        this.setState({currentScrollHeight: newScrollHeight})
+    }
+    }
+  }
+
+  
   render() {
+    const opacity = Math.min(100 / this.state.currentScrollHeight, 1)-0.1;
+
     return (
 
       <div className="projectMain">
@@ -48,7 +76,6 @@ class Project extends Component {
         <ProjectCard
           header="THYE HUA KWAN HOSPITAL"
           side={2}
-          headerSide={2}
           headerAnimation="slideInRight"
           order="1"
           colImageList={[ca2A, ca2B, ca2C]}
@@ -57,6 +84,18 @@ class Project extends Component {
           list3="EXTENSION PROJECT"
           list4="INSULATION FOR CHILLER PIPING"
           list5="FEB-17 - JUN-17"
+        />
+         <ProjectCard
+          header="PAINTING WORKS AT DENKA WAREHOUSE"
+          side={1} 
+          headerAnimation="slideInLeft"
+          order="0"
+          colImageList={[ca3A, ca3B, ca3C, ca3D]}
+          list1="DENKA SINGAPORE PTE LTD"
+          list2="DENKA SINGAPORE PTE LTD"
+          list3="MAINTENANCE"
+          list4="PAINTING WORK AT DSPL: 1 AND 2"
+          list5="SEP-16 - FEB-17"
         />
 
         
@@ -149,27 +188,27 @@ class Project extends Component {
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>SHELL EASTERN PETROLEUM PTE LTD (SERAYA)</td>
+                      <td>RADIANT I&E ENGINEERING PTD LTD</td>
+                      <td>MAINTENANCE & PROJECT</td>
+                      <td>CIVIL WORKS</td>
+                      <td>DEC 18 - ON GOING</td>
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>ROBINSON TOWER</td>
+                      <td>ALSTERN TECHNOLOGIES SINGAPORE PTE LTD</td>
+                      <td>MAINTENANCE</td>
+                      <td>CHILLER PIPE PU INSULATION REPLACEMENT</td>
+                      <td>FEB-18 - AUG-18</td>
                     </tr>
                     <tr>
                       <td>3</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>10 RAFFLES CITY SWISS HOTEL</td>
+                      <td>NEW TECH CONSTRUCTION & ENGINEERING PTE LTD</td>
+                      <td>HOTEL UPGRADING PROJECT</td>
+                      <td>PROVISION OF SKILLED WORKERS FOR INSULATION WORKS</td>
+                      <td>JUN-17 JUL-17</td>
                     </tr>
                   </tbody>
                 </Table>
@@ -179,6 +218,15 @@ class Project extends Component {
           </Container>
 
         </div>
+        
+        <section className="section section-light2">
+          <ScrollAnimation animateIn="slideInRight" offset={50}>
+            <h2 className="my-header">BIZSAFE CERTIFICATE</h2>
+          </ScrollAnimation>
+        </section>
+        <div className="pimg biZcert" style={{ backgroundImage: "url(" +certBG  + ")" }}></div>
+
+        <div style={{ opacity }} className="arrow bounce" />
       </div>
     );
   }

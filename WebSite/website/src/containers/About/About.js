@@ -13,7 +13,7 @@ import aboutBg8 from '../../assets/Images/about/8.png';
 
 import Modal from '../../components/UI/Modal/Modal';
 import LearnMore from '../../components/LearnMore/LearnMore';
-import {Card,CardDeck,ListGroup,Container} from 'react-bootstrap';
+import {Card,CardDeck} from 'react-bootstrap';
 
 import man from '../.././assets/Images/about/man.jpg';
 
@@ -27,10 +27,20 @@ let currentScrollPosAbout = 0;
 class About extends Component {
 
   state = {
+    currentScrollHeight: window.scrollY,
     showModal: false,
     detailsObj: []
   }
 
+  componentDidMount() {
+    window.onscroll = () => {
+      // this.setState({currentScrollHeight: window.scrollY});
+      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+    if (this.state.currentScrollHeight !== newScrollHeight){
+        this.setState({currentScrollHeight: newScrollHeight})
+    }
+    }
+  }
 
   showMoreDetails = (detailsObj, id) => {
 
@@ -64,6 +74,8 @@ class About extends Component {
   }
 
   render() {
+    const opacity = Math.min(100 / this.state.currentScrollHeight, 1)-0.1;
+
     return (
       <div className="AboutMain" >
         <div className="pimg" style={{ backgroundImage: "url(" + aboutBg1 + ")" }}>
@@ -233,6 +245,8 @@ class About extends Component {
           </CardDeck>
           </div>
         </div>
+
+        <div style={{ opacity }} className="arrow bounce" />
       </div>
     );
   }
