@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './projectCard.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Card, Col, Row, Table, Carousel } from 'react-bootstrap';
-import projectBk from '../../../assets/Images/project/1.jpg';
+import projectBk from '../../../assets/Images/project/1.png';
 
 import logoImage from '../../../assets/Images/logo.png';
 

@@ -48,4 +48,7 @@
 .bizDiv{
   text-align: center;
 }
+.bizDiv img{
+  max-width: 100vw;
+}
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Contact.css';
 
-import contactBk from '../../assets/Images/contact/1.jpg';
+import contactBk from '../../assets/Images/contact/1.png';
 
 import emailIC from '../../assets/Images/contact/email.png';
 import phoneIC from '../../assets/Images/contact/phone.png';

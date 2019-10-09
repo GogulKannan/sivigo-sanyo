@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Project.css';
-import projectBk from '../../assets/Images/project/1.jpg';
+import projectBk from '../../assets/Images/project/1.png';
 import ProjectCard from '../../components/UI/ProjectCard/projectCard';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Card, Container, Table } from 'react-bootstrap';
