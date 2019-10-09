@@ -17,7 +17,7 @@ class Contact extends Component {
 
     this.state = {
       currentScrollHeight: window.scrollY,
-      showingInfoWindow: true,
+      showingInfoWindow: false,
       activeMarker: {},
       selectedPlace: {},
     };
@@ -44,9 +44,9 @@ class Contact extends Component {
     window.onscroll = () => {
       // this.setState({currentScrollHeight: window.scrollY});
       const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
-    if (this.state.currentScrollHeight !== newScrollHeight){
-        this.setState({currentScrollHeight: newScrollHeight})
-    }
+      if (this.state.currentScrollHeight !== newScrollHeight){
+          this.setState({currentScrollHeight: newScrollHeight})
+      }
     }
   }
 
@@ -125,7 +125,7 @@ class Contact extends Component {
               zoom={11}
               initialCenter={{ lat: 1.320109, lng: 103.629764}}
               >
-              <Marker className="markerContent" position={{ lat: 1.320109, lng: 103.629764}} name="2 Tuas South Ave 2, #02-07, Tuas Vista, Singapore - 637601" ref={this.onMarkerClick} onClick={this.onMarkerClick} link="https://www.google.com/maps/dir/?api=1&destination=2%20Tuas%20South%20Ave%202%20#02-07%20Tuas%20Vista%0ASingapore,%20637601%0ASingapore"/>
+              <Marker position={{ lat: 1.320109, lng: 103.629764}} name="2 Tuas South Ave 2, #02-07, Tuas Vista, Singapore - 637601" onClick={this.onMarkerClick} link="https://www.google.com/maps/dir/?api=1&destination=2%20Tuas%20South%20Ave%202%20#02-07%20Tuas%20Vista%0ASingapore,%20637601%0ASingapore"/>
               <InfoWindow
                 marker={this.state.activeMarker}
                 visible={this.state.showingInfoWindow}>
