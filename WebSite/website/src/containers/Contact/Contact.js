@@ -27,16 +27,16 @@ class Contact extends Component {
           <Row className="iconRow">
             <Col><Image src={phoneIC} />
               <h5 className="iconHead">PHONE</h5>
-              <p>TEL NO: +65 6677 2335<br />FAX NO: +65 6677 2335</p>
+              <p className="iconContent">TEL NO: +65 6677 2335<br />FAX NO: +65 6677 2335</p>
             </Col>
             <Col>
               <Image src={emailIC} />
               <h5 className="iconHead">EMAIL</h5>
-              <p>SANYO.ENG@GMAIL.COM</p>
+              <p className="iconContent">SANYO.ENG@GMAIL.COM</p>
             </Col>
             <Col><Image src={mapIC} />
               <h5 className="iconHead">LOCATION </h5>
-              <p>2 TUAS SOUTH AVE 2<br />#02-07 TUAS VISTA<br />SINGAPORE 637601</p>
+              <p className="iconContent">2 TUAS SOUTH AVE 2<br />#02-07 TUAS VISTA<br />SINGAPORE 637601</p>
             </Col>
           </Row>
 
@@ -63,7 +63,7 @@ class Contact extends Component {
               <Form.Group controlId="exampleForm.ControlTextMess">
                 <Form.Control as="textarea" rows="3" placeholder="Message" />
               </Form.Group>
-              <Button type="submit">SEND MESSAGE</Button>
+              <Button type="submit" className="sendMessage">SEND MESSAGE</Button>
             </Form>
           </Container>
         </div>
