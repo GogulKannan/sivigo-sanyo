@@ -10,9 +10,36 @@ import mapIC from '../../assets/Images/contact/map.png';
 import { Form, Container, Card, Row, Col, Button, Image } from 'react-bootstrap';
 
 class Contact extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentScrollHeight: window.scrollY
+    };
+  }
+
+  componentDidMount() {
+    window.onscroll = () => {
+      // this.setState({currentScrollHeight: window.scrollY});
+      const newScrollHeight = Math.ceil(window.scrollY / 50) *50;
+    if (this.state.currentScrollHeight != newScrollHeight){
+        this.setState({currentScrollHeight: newScrollHeight})
+    }
+    }
+  }
+
+
   render() {
+
+    const opacity = Math.min(100 / this.state.currentScrollHeight, 1)-0.1;
+
+
+
     return (
       <div className="contactMain">
+
+
         <div className="pimg" style={{ backgroundImage: "url(" + contactBk + ")" }}>
           <div className="ptext">
             <span className="borders">
@@ -78,6 +105,9 @@ class Contact extends Component {
           </Card>
           </Container>
         </div>
+
+
+        <div style={{ opacity }} className="arrow bounce" />
 
 
       </div>
