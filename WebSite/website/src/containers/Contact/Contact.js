@@ -7,9 +7,34 @@ import emailIC from '../../assets/Images/contact/email.png';
 import phoneIC from '../../assets/Images/contact/phone.png';
 import mapIC from '../../assets/Images/contact/map.png';
 
+import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
+
 import { Form, Container, Card, Row, Col, Button, Image } from 'react-bootstrap';
 
 class Contact extends Component {
+  state = {
+    showingInfoWindow: true,
+    activeMarker: {},
+    selectedPlace: {},
+  };
+ 
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+    
+ 
+  onMapClicked = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      })
+    }
+  };
+
   render() {
     return (
       <div className="contactMain">
@@ -73,9 +98,21 @@ class Contact extends Component {
 
         <div className="pimg" style={{ backgroundImage: "url(" + contactBk + ")" }}>
           <Container className="mapContainer">
-            <Card className="mapHolder">
-              MAP
-          </Card>
+            <Map className="mapContent" onClick={this.onMapClicked}
+              google={this.props.google}
+              zoom={11}
+              initialCenter={{ lat: 1.320109, lng: 103.629764}}
+              >
+              <Marker position={{ lat: 1.320109, lng: 103.629764}} name="2 Tuas South Ave 2, #02-07, Tuas Vista, Singapore - 637601" onClick={this.onMarkerClick} link="https://www.google.com/maps/dir/?api=1&destination=2%20Tuas%20South%20Ave%202%20#02-07%20Tuas%20Vista%0ASingapore,%20637601%0ASingapore"/>
+              <InfoWindow
+                marker={this.state.activeMarker}
+                visible={this.state.showingInfoWindow}>
+                  <div>
+                    <p className="addressContent">{this.state.selectedPlace.name}</p>
+                    <a href={this.state.selectedPlace.link} target="_blank" className="directionContent">Directions</a>
+                  </div>
+              </InfoWindow>
+            </Map>
           </Container>
         </div>
 
@@ -88,4 +125,6 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyCfV1f0l6hdFlE6OAiKRSyxnaxcSAU7nwc'
+})(Contact);;

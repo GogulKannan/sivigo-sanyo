@@ -37,16 +37,6 @@
   /* padding-bottom: 5vh; */
 }
 
-.mapHolder{
-  padding: 20vh;
-  max-width: 70vw;
-  max-height: 70vh;
-}
-
-.mapContainer{
-  padding: 20vh;
-}
-
 .iconRow{
   text-align: center;
 }
@@ -87,5 +77,23 @@
   color: black;
 }
 
+.mapContainer{
+  height: 100vh;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapContent{
+  width: 80vw !important;
+  height: 60vh !important;
+  border-radius: 15px;
+}
 
+.addressContent{
+  font-weight: 600;
+}
+
+.directionContent{
+  text-decoration: underline;
+}
 
