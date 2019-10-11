@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4dc1cbd0a6a8c890650ac1ac837271c9",
+    "revision": "634c732dbea88623f6fb6eae2ccd2f4b",
     "url": "/sivigo-sanyo/index.html"
   },
   {
-    "revision": "58f7198556e7b45a27d5",
+    "revision": "9dd12dd6a847068857bb",
     "url": "/sivigo-sanyo/static/css/2.c5659bbc.chunk.css"
   },
   {
-    "revision": "90e128d7ae3e665b3281",
+    "revision": "f6ce21253ca346a16bad",
     "url": "/sivigo-sanyo/static/css/main.aa17b350.chunk.css"
   },
   {
-    "revision": "58f7198556e7b45a27d5",
-    "url": "/sivigo-sanyo/static/js/2.377fcab0.chunk.js"
+    "revision": "9dd12dd6a847068857bb",
+    "url": "/sivigo-sanyo/static/js/2.871f01df.chunk.js"
   },
   {
-    "revision": "90e128d7ae3e665b3281",
-    "url": "/sivigo-sanyo/static/js/main.2ffeb776.chunk.js"
+    "revision": "f6ce21253ca346a16bad",
+    "url": "/sivigo-sanyo/static/js/main.107bc3cf.chunk.js"
   },
   {
     "revision": "0d0ab094328e80ed24ec",
