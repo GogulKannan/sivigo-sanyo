@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/sivigo-sanyo/static/css/main.aa17b350.chunk.css",
-    "main.js": "/sivigo-sanyo/static/js/main.107bc3cf.chunk.js",
-    "main.js.map": "/sivigo-sanyo/static/js/main.107bc3cf.chunk.js.map",
+    "main.css": "/sivigo-sanyo/static/css/main.218af529.chunk.css",
+    "main.js": "/sivigo-sanyo/static/js/main.184b0223.chunk.js",
+    "main.js.map": "/sivigo-sanyo/static/js/main.184b0223.chunk.js.map",
     "runtime~main.js": "/sivigo-sanyo/static/js/runtime~main.04ad8411.js",
     "runtime~main.js.map": "/sivigo-sanyo/static/js/runtime~main.04ad8411.js.map",
     "static/css/2.c5659bbc.chunk.css": "/sivigo-sanyo/static/css/2.c5659bbc.chunk.css",
     "static/js/2.871f01df.chunk.js": "/sivigo-sanyo/static/js/2.871f01df.chunk.js",
     "static/js/2.871f01df.chunk.js.map": "/sivigo-sanyo/static/js/2.871f01df.chunk.js.map",
     "index.html": "/sivigo-sanyo/index.html",
-    "precache-manifest.13c2cb873390d9cc9d7da4e74a878d1b.js": "/sivigo-sanyo/precache-manifest.13c2cb873390d9cc9d7da4e74a878d1b.js",
+    "precache-manifest.1a93cd5fbe79a61dbf76a69a9c1287f6.js": "/sivigo-sanyo/precache-manifest.1a93cd5fbe79a61dbf76a69a9c1287f6.js",
     "service-worker.js": "/sivigo-sanyo/service-worker.js",
     "static/css/2.c5659bbc.chunk.css.map": "/sivigo-sanyo/static/css/2.c5659bbc.chunk.css.map",
-    "static/css/main.aa17b350.chunk.css.map": "/sivigo-sanyo/static/css/main.aa17b350.chunk.css.map",
+    "static/css/main.218af529.chunk.css.map": "/sivigo-sanyo/static/css/main.218af529.chunk.css.map",
     "static/media/1.png": "/sivigo-sanyo/static/media/1.b0684601.png",
     "static/media/1A.jpeg": "/sivigo-sanyo/static/media/1A.f42ebbc1.jpeg",
     "static/media/1B.jpeg": "/sivigo-sanyo/static/media/1B.5375dda9.jpeg",
@@ -35,7 +35,7 @@
     "static/media/bizsafe-3-logo.png": "/sivigo-sanyo/static/media/bizsafe-3-logo.991b2f0f.png",
     "static/media/cert.jpg": "/sivigo-sanyo/static/media/cert.9c27fad5.jpg",
     "static/media/Contact.css": "/sivigo-sanyo/static/media/down.2c0862a6.svg",
-    "static/media/logo.png": "/sivigo-sanyo/static/media/logo.03e52d8a.png",
+    "static/media/logo.png": "/sivigo-sanyo/static/media/logo.f40d2e66.png",
     "static/media/man.jpg": "/sivigo-sanyo/static/media/man.1a8eac3f.jpg"
   }
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "634c732dbea88623f6fb6eae2ccd2f4b",
+    "revision": "487b7d9e2e2c5a544f84221fb41f778f",
     "url": "/sivigo-sanyo/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sivigo-sanyo/static/css/2.c5659bbc.chunk.css"
   },
   {
-    "revision": "f6ce21253ca346a16bad",
-    "url": "/sivigo-sanyo/static/css/main.aa17b350.chunk.css"
+    "revision": "85bdfcf479d7750e0e83",
+    "url": "/sivigo-sanyo/static/css/main.218af529.chunk.css"
   },
   {
     "revision": "9dd12dd6a847068857bb",
     "url": "/sivigo-sanyo/static/js/2.871f01df.chunk.js"
   },
   {
-    "revision": "f6ce21253ca346a16bad",
-    "url": "/sivigo-sanyo/static/js/main.107bc3cf.chunk.js"
+    "revision": "85bdfcf479d7750e0e83",
+    "url": "/sivigo-sanyo/static/js/main.184b0223.chunk.js"
   },
   {
     "revision": "0d0ab094328e80ed24ec",
@@ -136,8 +136,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sivigo-sanyo/static/media/down.2c0862a6.svg"
   },
   {
-    "revision": "03e52d8acc8448c83fd4970f8254b26d",
-    "url": "/sivigo-sanyo/static/media/logo.03e52d8a.png"
+    "revision": "f40d2e6607062fe0887f6629a8f9bc28",
+    "url": "/sivigo-sanyo/static/media/logo.f40d2e66.png"
   },
   {
     "revision": "1a8eac3f9d58f2f7c32d61e195c82af3",
