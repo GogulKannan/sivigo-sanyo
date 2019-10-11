@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sivigo-sanyo/precache-manifest.1a93cd5fbe79a61dbf76a69a9c1287f6.js"
+  "/sivigo-sanyo/precache-manifest.c1f5083fe652e5fbf14b207f7a56a6af.js"
 );
 
 self.addEventListener('message', (event) => {
