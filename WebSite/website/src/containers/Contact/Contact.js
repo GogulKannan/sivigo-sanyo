@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Contact.css';
 
 import contactBk from '../../assets/Images/contact/1.png';
+import mapBg from '../../assets/Images/contact/2.png';
 
 import emailIC from '../../assets/Images/contact/email.png';
 import phoneIC from '../../assets/Images/contact/phone.png';
@@ -118,7 +119,7 @@ class Contact extends Component {
 
 
 
-        <div className="pimg" style={{ backgroundImage: "url(" + contactBk + ")" }}>
+        <div className="pimg" style={{ backgroundImage: "url(" + mapBg + ")" }}>
           <Container className="mapContainer">
             <Map className="mapContent" onClick={this.onMapClicked}
               google={this.props.google}
