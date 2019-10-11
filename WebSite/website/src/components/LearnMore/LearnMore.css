@@ -1,7 +1,7 @@
 .LearnMoreLogo{
     align-items: center;
     height: 10vh;
-    width: 15vw;
+    width: 10vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +46,7 @@
         font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     }
     .LearnMoreLogo{
-        width: 40vw;
+        width: 30vw;
     }
     .learnMoreHeading{
         font-size: 5vw;

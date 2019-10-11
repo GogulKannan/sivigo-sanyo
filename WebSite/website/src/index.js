@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Router } from 'react-router';
+import { HashRouter } from 'react-router-dom';
 
 // Create history object.
 import createHistory from 'history/createBrowserHistory';
@@ -17,9 +17,9 @@ history.listen((location, action) => {
 
 
 const app = (
-    <Router history={history}>
+    <HashRouter history={history}>
         <App />
-    </Router>
+    </HashRouter>
 );
 
 ReactDOM.render( app, document.getElementById( 'root' ) );
