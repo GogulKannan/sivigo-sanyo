@@ -10,11 +10,21 @@ import "animate.css/animate.min.css";
 class Home extends Component {
   constructor(props) {
     super(props);
+    this.myRef = React.createRef();
 
     this.state = {
       currentScrollHeight: window.scrollY
     };
   }
+
+  scrollToMyRef = () => {
+    window.scrollTo({
+        top:this.myRef.current.offsetTop,
+        // top:250,
+        behavior: 'smooth'     
+    })
+  }
+
 
   componentDidMount() {
     window.onscroll = () => {
@@ -39,7 +49,7 @@ class Home extends Component {
             </span>
           </div>
       </div>
-      <section className="section section-light2">
+      <section ref={this.myRef} className="section section-light2">
       <ScrollAnimation animateIn="slideInRight" offset={50}>
         <h2 className="my-header">OUR MISSION</h2>
       </ScrollAnimation>        
@@ -72,14 +82,14 @@ class Home extends Component {
           <h2 className="my-header">OUR MOTO</h2>
         </ScrollAnimation>  
       </section>
-      <div className="pimg" style={{backgroundImage: "url(" + homeBg4 + ")"}}>
+      <div className="pimg"  style={{backgroundImage: "url(" + homeBg4 + ")"}}>
       <div className="ptext">
             <span className="border-rev">
             YOUR SATISFACTION IS OUR PRIORITY
             </span>
           </div>
       </div>   
-      <div style={{ opacity }} className="arrow bounce" />   
+      <div style={{ opacity }} onClick={this.scrollToMyRef} className="arrow bounce" />   
     </div>
     
   );
