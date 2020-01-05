@@ -7,7 +7,6 @@ import Home from './containers/Home/Home'
 import About from './containers/About/About';
 import Project from './containers/Project/Project';
 import Contact from './containers/Contact/Contact';
-import Upload from './containers/Upload/Upload';
 
 
 
@@ -18,7 +17,6 @@ class App extends Component {
     <div>
       <Layout>
           <Switch>
-          <Route path="/upload" component={Upload} />
             <Route path="/about" component={About} />
             <Route path="/project" component={Project} />
             <Route path="/contact" component={Contact} />
