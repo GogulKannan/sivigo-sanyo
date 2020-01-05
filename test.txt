@@ -12,3 +12,7 @@ npm install [ to unpack]
 npm start
 
 
+npm init -y
+npm i express express-fileupload
+
+npm i -D nodemon concurrently
