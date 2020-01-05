@@ -2,9 +2,10 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://GogulKannan.github.io/sivigo-sanyo/",
+  "homepage": "https://GogulKannan.github.io/sivigo-sanyo/",
   "dependencies": {
     "animate.css": "^3.7.2",
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
     "google-maps-react": "^2.0.2",
@@ -37,5 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
