@@ -5,7 +5,7 @@
   "homepage": "https://GogulKannan.github.io/sivigo-sanyo/",
   "dependencies": {
     "animate.css": "^3.7.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "gh-pages": "^2.1.1",
     "google-maps-react": "^2.0.2",
